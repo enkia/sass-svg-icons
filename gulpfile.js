@@ -1,9 +1,9 @@
 // load gulp dependancies
 var gulp = require('gulp');
     gutil = require('gulp-util');
+    batch = require('gulp-batch');
     cache = require('gulp-cached');
     imagemin = require('gulp-imagemin');
-    sass = require('gulp-sass');
     watch = require('gulp-watch');
     open = require('gulp-open');
 
@@ -16,12 +16,20 @@ path = {
 };
 
 // default and build tasks
+gulp.task('default', ['watch']);
 gulp.task('svg', ['build-svg']);
 
 // watch for events
+/*gulp.task('watch', function () {
+    gulp.watch(path.assets.src, ['build-svg']);
+});*/
+
 gulp.task('watch', function () {
-    gulp.watch(path.assets.svg, ['build-svg']);
+    watch(path.assets.src, batch(function (events, done) {
+        gulp.start('build-svg', done);
+    }));
 });
+
 
 // optimize svg and open in editor
 gulp.task('build-svg', function() {
@@ -32,8 +40,8 @@ gulp.task('build-svg', function() {
         optimizationLevel: 5,
         svgoPlugins: [{removeViewBox: false}]
     }))
-    .pipe(open({app: 'Sublime Text'}))
-    .pipe(gulp.dest(path.assets.dest));
+    .pipe(gulp.dest(path.assets.dest))
+    .pipe(open({app: 'Sublime Text'}));
 });
 
 
