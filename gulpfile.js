@@ -12,12 +12,15 @@ var gulp = require('gulp');
 
 // path variables
 path = {
-    dist: './test',
+    dist: './dist/**/*.scss',
     assets: {
         src: './source/svg/*.svg',
         dest: './source/processed'
     },
-    sass: './test/scss/*.scss'
+    test: {
+        sass: './test/scss/*.scss',
+        dest: './test'
+    }
 };
 
 // default and build tasks
@@ -28,7 +31,8 @@ gulp.task('watch', function () {
     watch(path.assets.src, batch(function (events, done) {
         gulp.start('build-svg', done);
     }));
-    gulp.watch(path.sass, ['build-css']);
+    gulp.watch(path.dist, ['build-css']);
+    gulp.watch(path.test.sass, ['build-css']);
 });
 
 // optimize svg and open in editor
@@ -48,10 +52,10 @@ gulp.task('build-svg', function() {
 
 // build CSS Test file
 gulp.task('build-css', function() {
-    return gulp.src(path.sass)
+    return gulp.src(path.test.sass)
     .pipe(cache('scss'))
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest(path.dist + '/css'))
+    .pipe(gulp.dest(path.test.dest + '/css'))
 });
 
 

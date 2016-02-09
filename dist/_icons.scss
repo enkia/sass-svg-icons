@@ -2,10 +2,16 @@
   @return "%23#{str-slice($color, 2)}";
 }
 
-@function get-icon($icon-name, $color, $color2:"", $color3:"") {
-  $icon-color: parsecolor(#{$color});
+@function get-icon($icon-name, $color1, $color2, $color3) {
+  $icon-color: parsecolor(#{$color1});
   $icon-color2: parsecolor(#{$color2});
   $icon-color3: parsecolor(#{$color3});
+
+  /*@each $color in $colors {
+    $i: $i + 1;
+    $icon-color#{$i}: $color; // boo
+  }*/
+
   $icons:(
     arrow-video: '%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%228.954%22%20height%3D%228.954%22%20viewBox%3D%220%200%208.954%208.954%22%3E%3Ctitle%3Earrow_video%3C/title%3E%3Ccircle%20cx%3D%224.477%22%20cy%3D%224.477%22%20r%3D%223.977%22%20fill%3D%22#{$icon-color}%22%20stroke%3D%22#{$icon-color2}%22%20stroke-miterlimit%3D%2210%22/%3E%3Cpath%20d%3D%22M36.721%2C35.219L34.536%2C37.4a0.308%2C0.308%2C0%2C0%2C1-.219.092A0.315%2C0.315%2C0%2C0%2C1%2C34%2C37.184V32.815a0.315%2C0.315%2C0%2C0%2C1%2C.312-0.312%2C0.31%2C0.31%2C0%2C0%2C1%2C.219.092l2.185%2C2.185a0.308%2C0.308%2C0%2C0%2C1%2C.092.219A0.313%2C0.313%2C0%2C0%2C1%2C36.721%2C35.219Z%22%20transform%3D%22translate%28-30.523%20-30.523%29%22%20fill%3D%22#{$icon-color3}%22/%3E%3C/svg%3E',
     arrow-right: '%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%223.858%22%20height%3D%226.859%22%20viewBox%3D%220%200%203.858%206.859%22%3E%3Ctitle%3Earrow-right%3C/title%3E%3Cpath%20d%3D%22M67.731%2C35.3l-3%2C3A0.426%2C0.426%2C0%2C0%2C1%2C64%2C38V32a0.426%2C0.426%2C0%2C0%2C1%2C.73-0.3l3%2C3A0.421%2C0.421%2C0%2C0%2C1%2C67.731%2C35.3Z%22%20transform%3D%22translate%28-64%20-31.57%29%22%20fill%3D%22#{$icon-color}%22/%3E%3C/svg%3E',
