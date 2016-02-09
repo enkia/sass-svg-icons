@@ -2,7 +2,7 @@
   @return "%23#{str-slice($color, 2)}";
 }
 
-@function get-icon($icon-name, $color1, $color2, $color3) {
+@function get-icon($icon-name, $color1, $color2: "", $color3: "") {
   $icon-color: parsecolor(#{$color1});
   $icon-color2: parsecolor(#{$color2});
   $icon-color3: parsecolor(#{$color3});
