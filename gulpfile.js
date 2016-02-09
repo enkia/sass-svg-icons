@@ -7,7 +7,7 @@ var gulp = require('gulp');
     watch = require('gulp-watch');
     open = require('gulp-open');
     svgmin = require('gulp-svgmin');
-    urlencode = require('urlencode-stream');
+    //urlencode = require('urlencode-stream');
 
 // path variables
 path = {
@@ -36,8 +36,7 @@ gulp.task('build-svg', function() {
     return gulp.src(path.assets.src)
     .pipe(watch(path.assets.src))
     .pipe(cache('svg'))
-    .pipe(svgmin({
-    }))
+    .pipe(imagemin())
     //.pipe(new urlencode())
     .pipe(gulp.dest(path.assets.dest))
     .pipe(open({app: 'Sublime Text'}));
