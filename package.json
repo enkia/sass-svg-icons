@@ -23,6 +23,7 @@
     "gulp-cached": "^1.1.0",
     "gulp-imagemin": "^2.3.0",
     "gulp-open": "^1.0.0",
+    "gulp-sass": "^2.2.0",
     "gulp-svgmin": "^1.2.1",
     "gulp-watch": "^4.3.5",
     "svgmin": "^0.1.0",
