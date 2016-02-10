@@ -1,5 +1,7 @@
 @import "../../dist/icons";
 
+$icon: email;
+
 body {
   font-size: 100%;
   font-family: Lato, Arial, Helvetica, sans-serif;
@@ -9,12 +11,12 @@ body {
   margin: 5rem auto;
   padding: 2rem 2rem 3rem 8rem;
   line-height: normal;
-  background: #fff get-icon(caret-right, #09c, #990000, #ef6e26) 5% 50% / 5% no-repeat;
+  background: #fff get-icon($icon, #09c, #990000, #ef6e26) 5% 50% / 5% no-repeat;
   width: 40rem;
   height: 2rem;
   border: 1px solid #eee;
   &:hover {
-    background-image: get-icon(caret-right, #36B8E3);
+    background-image: get-icon($icon, #36B8E3);
   }
   h1 {
     margin: 0;
