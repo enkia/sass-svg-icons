@@ -8,8 +8,8 @@
   $icon-color3: parsecolor(#{$color3});
 
   /*@each $color in $colors {
-    $i: $i + 1;
     $icon-color#{$i}: $color; // boo
+     $i: $i + 1;
   }*/
 
   $icons:(
