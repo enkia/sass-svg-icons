@@ -4,8 +4,16 @@ body {
 
 .icon {
   margin: 5rem auto;
-  padding: 2rem 5rem 1rem;
+  padding: 2rem 2rem 3rem 8rem;
   line-height: normal;
-  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%228.954%22%20height%3D%228.954%22%20viewBox%3D%220%200%208.954%208.954%22%3E%3Ctitle%3Eicons%3C/title%3E%3Ccircle%20cx%3D%224.477%22%20cy%3D%224.477%22%20r%3D%223.977%22%20fill%3D%22%23fff%22%20stroke%3D%22%2309c%22%20stroke-miterlimit%3D%2210%22/%3E%3Cpath%20d%3D%22M5.96%204.665L4.084%206.542a.265.265%200%200%201-.188.08.27.27%200%200%201-.268-.27v-3.75a.27.27%200%200%201%20.268-.27.266.266%200%200%201%20.188.08L5.96%204.288a.265.265%200%200%201%20.084.19.27.27%200%200%201-.084.187z%22%20fill%3D%22%23ef6e26%22/%3E%3C/svg%3E") 0 50%/10% no-repeat;
-  width: 20rem;
-  height: 2rem; }
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%223.899%22%20height%3D%226.686%22%20viewBox%3D%220%200%203.899%206.686%22%3E%3Ctitle%3Eicons%3C/title%3E%3Cpath%20d%3D%22M.71.068l3.12%203.12a.21.21%200%200%201%200%20.31L.71%206.618a.21.21%200%200%201-.31%200l-.333-.335a.217.217%200%200%201-.07-.154.23.23%200%200%201%20.067-.154l2.633-2.633L.067.71a.21.21%200%200%201%200-.308l.33-.334a.21.21%200%200%201%20.313%200z%22%20fill%3D%22%2309c%22/%3E%3C/svg%3E") 5% 50%/7.5% no-repeat;
+  width: 40rem;
+  height: 2rem;
+  border: 1px solid #eee; }
+  .icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%223.899%22%20height%3D%226.686%22%20viewBox%3D%220%200%203.899%206.686%22%3E%3Ctitle%3Eicons%3C/title%3E%3Cpath%20d%3D%22M.71.068l3.12%203.12a.21.21%200%200%201%200%20.31L.71%206.618a.21.21%200%200%201-.31%200l-.333-.335a.217.217%200%200%201-.07-.154.23.23%200%200%201%20.067-.154l2.633-2.633L.067.71a.21.21%200%200%201%200-.308l.33-.334a.21.21%200%200%201%20.313%200z%22%20fill%3D%22%2336B8E3%22/%3E%3C/svg%3E"); }
+  .icon h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+    line-height: normal; }
