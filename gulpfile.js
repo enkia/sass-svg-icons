@@ -11,8 +11,8 @@ var gulp = require('gulp');
     rename = require('gulp-rename');
 
 //  config variables
-editor = 'Sublime Text';
-path = {
+var editor = 'Sublime Text';
+var path = {
     dist: './dist/**/*.scss',
     assets: {
         src: './source/*.svg',
@@ -38,6 +38,7 @@ gulp.task('browser-sync', function() {
     });
 });
 
+// watch task
 gulp.task('watch', function () {
     watch(path.assets.src, function() {
         gulp.start('build-svg');
@@ -57,6 +58,7 @@ gulp.task('build-svg', function() {
     return gulp.src(path.assets.src)
     .pipe(cache('svg'))
     .pipe(imagemin())
+    //.pipe(customURIGenerator())
     .pipe(rename(function(path) {
         path.basename = 'icon';
     }))
@@ -80,7 +82,7 @@ gulp.task('build-css', function() {
 });
 
 gulp.task('clean', function() {
-    return gulp.src('./source/**/*.svg', { read: false }) // much faster
+    return gulp.src('./source/**/*.svg', { read: false })
     .pipe(rimraf());
 });
 
