@@ -9,6 +9,7 @@ var gulp = require('gulp');
     sass = require('gulp-sass');
     rimraf = require('gulp-rimraf');
     rename = require('gulp-rename');
+    es = require('event-stream');
 
 //  config variables
 var editor = 'Sublime Text';
@@ -49,23 +50,20 @@ gulp.task('watch', function () {
 });
 
 
-var customURIGenerator = function(data){
-    return encodeURIComponent(data).replace(/%2F/g, "/");
-};
 
-// optimize svg and open in editor
 gulp.task('build-svg', function() {
     return gulp.src(path.assets.src)
     .pipe(cache('svg'))
     .pipe(imagemin())
-    //.pipe(customURIGenerator())
+    .pipe(urlencode())
     .pipe(rename(function(path) {
         path.basename = 'icon';
     }))
     .pipe(gulp.dest(path.assets.dest));
 });
 
-// open new svg file in editor
+
+// open new svg file in editor for url encoding
 gulp.task('open-file', ['build-svg'], function() {
     gulp.src(path.assets.dest + '/icon.svg')
     .pipe(open({app: editor}));
@@ -86,4 +84,15 @@ gulp.task('clean', function() {
     .pipe(rimraf());
 });
 
+
+
+
+// url encode
+function urlencode() {
+  function transform(file, cb) {
+    file.contents = new Buffer(String(encodeURIComponent(file.contents)));
+    cb(null, file);
+  }
+  return es.map(transform);
+}
 
