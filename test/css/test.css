@@ -6,12 +6,12 @@ body {
   margin: 5rem auto;
   padding: 2rem 2rem 3rem 8rem;
   line-height: normal;
-  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%223.858%22%20height%3D%226.859%22%20viewBox%3D%220%200%203.858%206.859%22%3E%3Ctitle%3Earrow-right%3C/title%3E%3Cpath%20d%3D%22M67.731%2C35.3l-3%2C3A0.426%2C0.426%2C0%2C0%2C1%2C64%2C38V32a0.426%2C0.426%2C0%2C0%2C1%2C.73-0.3l3%2C3A0.421%2C0.421%2C0%2C0%2C1%2C67.731%2C35.3Z%22%20transform%3D%22translate%28-64%20-31.57%29%22%20fill%3D%22%2309c%22/%3E%3C/svg%3E") 5% 50%/5% no-repeat;
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%224.909%22%20height%3D%227.648%22%20viewBox%3D%220%200%204.909%207.648%22%3E%3Ctitle%3Echevron-right%3C/title%3E%3Cpath%20d%3D%22M4.82%203.61a.3.3%200%200%201%200%20.426l-3.517%203.52a.306.306%200%200%201-.432%200L.09%206.77a.3.3%200%200%201%200-.428l2.52-2.52-2.52-2.52a.3.3%200%200%201%200-.428L.87.087a.305.305%200%200%201%20.433%200z%22%20fill%3D%22%2309c%22/%3E%3C/svg%3E") 5% 50%/5% no-repeat;
   width: 40rem;
   height: 2rem;
   border: 1px solid #eee; }
   .icon:hover {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%223.858%22%20height%3D%226.859%22%20viewBox%3D%220%200%203.858%206.859%22%3E%3Ctitle%3Earrow-right%3C/title%3E%3Cpath%20d%3D%22M67.731%2C35.3l-3%2C3A0.426%2C0.426%2C0%2C0%2C1%2C64%2C38V32a0.426%2C0.426%2C0%2C0%2C1%2C.73-0.3l3%2C3A0.421%2C0.421%2C0%2C0%2C1%2C67.731%2C35.3Z%22%20transform%3D%22translate%28-64%20-31.57%29%22%20fill%3D%22%2336B8E3%22/%3E%3C/svg%3E"); }
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%224.909%22%20height%3D%227.648%22%20viewBox%3D%220%200%204.909%207.648%22%3E%3Ctitle%3Echevron-right%3C/title%3E%3Cpath%20d%3D%22M4.82%203.61a.3.3%200%200%201%200%20.426l-3.517%203.52a.306.306%200%200%201-.432%200L.09%206.77a.3.3%200%200%201%200-.428l2.52-2.52-2.52-2.52a.3.3%200%200%201%200-.428L.87.087a.305.305%200%200%201%20.433%200z%22%20fill%3D%22%2336B8E3%22/%3E%3C/svg%3E"); }
   .icon h1 {
     margin: 0;
     padding: 0;
