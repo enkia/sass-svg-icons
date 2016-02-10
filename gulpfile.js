@@ -1,4 +1,4 @@
-// load gulp dependancies
+// Load gulp dependancies
 var gulp = require('gulp');
     gutil = require('gulp-util');
     browserSync = require('browser-sync').create();
@@ -9,9 +9,10 @@ var gulp = require('gulp');
     sass = require('gulp-sass');
     rimraf = require('gulp-rimraf');
     rename = require('gulp-rename');
+    clipboard = require('gulp-clipboard');
     es = require('event-stream');
 
-//  config variables
+//  Config variables
 var editor = 'Sublime Text';
 var path = {
     dist: './dist/**/*.scss',
@@ -26,10 +27,10 @@ var path = {
     }
 };
 
-// default watch task
+// Default watch task
 gulp.task('default', ['watch', 'browser-sync']);
 
-// initialize browsersync
+// Initialize browsersync
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: path.test.dest,
@@ -39,18 +40,18 @@ gulp.task('browser-sync', function() {
     });
 });
 
-// watch task
+// Watch task
 gulp.task('watch', function () {
     watch(path.assets.src, function() {
         gulp.start('build-svg');
-        gulp.start('open-file');
+        //gulp.start('open-file');
     });
     gulp.watch(path.dist, ['build-css']);
     gulp.watch(path.test.sass, ['build-css']);
 });
 
 
-
+// Optimize svg, and copy to clipboard
 gulp.task('build-svg', function() {
     return gulp.src(path.assets.src)
     .pipe(cache('svg'))
@@ -59,18 +60,19 @@ gulp.task('build-svg', function() {
     .pipe(rename(function(path) {
         path.basename = 'icon';
     }))
+    .pipe(clipboard())
     .pipe(gulp.dest(path.assets.dest));
 });
 
 
-// open new svg file in editor for url encoding
+// Open new svg file in editor
 gulp.task('open-file', ['build-svg'], function() {
     gulp.src(path.assets.dest + '/icon.svg')
     .pipe(open({app: editor}));
     return
 });
 
-// build CSS Test file
+// Build CSS Test file
 gulp.task('build-css', function() {
     return gulp.src(path.test.sass)
     .pipe(cache('scss'))
@@ -87,7 +89,7 @@ gulp.task('clean', function() {
 
 
 
-// url encode
+// URL encode
 function urlencode() {
   function transform(file, cb) {
     file.contents = new Buffer(String(encodeURIComponent(file.contents)));
