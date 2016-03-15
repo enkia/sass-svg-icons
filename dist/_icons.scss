@@ -1,3 +1,4 @@
+// parse color
 @function parsecolor($color) {
   @return "%23#{str-slice("#{$color}", 2)}";
 }
