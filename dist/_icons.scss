@@ -1,5 +1,5 @@
 @function parsecolor($color) {
-  @return "%23#{str-slice($color, 2)}";
+  @return "%23#{str-slice("#{$color}", 2)}";
 }
 
 @function get-icon($icon-name, $color1, $color2: "", $color3: "") {
