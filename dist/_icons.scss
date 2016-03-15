@@ -1,4 +1,4 @@
-// parse color
+// parse color by removing pound sign and adding %23
 @function parsecolor($color) {
   @return "%23#{str-slice("#{$color}", 2)}";
 }
