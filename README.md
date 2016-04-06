@@ -34,9 +34,9 @@ Example:
    * **Decimal:** 3
    * **Minify:** checked
 
-3. Open _icons.scss and paste the URL encoded SVG string that gulp copied to your clipboard into the icons map.
+3. Open _icons.scss and paste the URL encoded SVG string that **gulp copied to your clipboard** into the icons map.
 
-4. Search for and find 'fill' in the string and replace `%23[hex color code]` with `#{$icon_color}`, `#{$icon_color2}`, `#{$icon_color3}`, and so on.
+4. Search for and find 'fill' in the encoded string and replace `%23[hex color code]` with `#{$icon_color}`, `#{$icon_color2}`, `#{$icon_color3}`, and so on.
 
    ​
 

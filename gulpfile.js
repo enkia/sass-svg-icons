@@ -1,15 +1,14 @@
 // Load gulp dependancies
-var gulp = require('gulp');
-    gutil = require('gulp-util');
-    browserSync = require('browser-sync').create();
-    cache = require('gulp-cached');
-    imagemin = require('gulp-imagemin');
-    watch = require('gulp-watch');
-    open = require('gulp-open');
-    sass = require('gulp-sass');
-    rimraf = require('gulp-rimraf');
-    rename = require('gulp-rename');
-    clipboard = require('gulp-clipboard');
+var gulp = require('gulp'),
+    browserSync = require('browser-sync').create(),
+    cache = require('gulp-cached'),
+    imagemin = require('gulp-imagemin'),
+    watch = require('gulp-watch'),
+    open = require('gulp-open'),
+    sass = require('gulp-sass'),
+    rimraf = require('gulp-rimraf'),
+    rename = require('gulp-rename'),
+    clipboard = require('gulp-clipboard'),
     es = require('event-stream');
 
 //  Config variables
@@ -35,7 +34,7 @@ gulp.task('browser-sync', function() {
     browserSync.init({
         server: path.test.dest,
         index: path.test.index,
-        browser: "safari",
+        browser: 'safari',
         notify: false
     });
 });
@@ -69,7 +68,7 @@ gulp.task('build-svg', function() {
 gulp.task('open-file', ['build-svg'], function() {
     gulp.src(path.assets.dest + '/icon.svg')
     .pipe(open({app: editor}));
-    return
+    return;
 });
 
 // Build CSS Test file
@@ -91,10 +90,10 @@ gulp.task('clean', function() {
 
 // URL encode
 function urlencode() {
-  function transform(file, cb) {
-    file.contents = new Buffer(String(encodeURIComponent(file.contents)));
-    cb(null, file);
-  }
-  return es.map(transform);
+    function transform(file, cb) {
+        file.contents = new Buffer(String(encodeURIComponent(file.contents)));
+        cb(null, file);
+    }
+    return es.map(transform);
 }
 
