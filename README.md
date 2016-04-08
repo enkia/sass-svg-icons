@@ -4,7 +4,7 @@
 
 **Add the _icons.scss file to your scss folder and import:**
 
-``git clone git@enki.darkfires.com:/opt/git/icons.git``
+``git clone https://github.com/enkia/sass-svg-icons.git``
 
 `@import "icons/dist/icons";`
 
