@@ -10,12 +10,12 @@ body {
   margin: 5rem auto;
   padding: 2rem 2rem 3rem 8rem;
   line-height: normal;
-  background: #fff url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%227.047%22%20height%3D%227.688%22%20viewBox%3D%220%200%207.047%207.688%22%3E%3Ctitle%3Eicons%3C%2Ftitle%3E%3Cpath%20d%3D%22M5.711%207.688H1.336A1.23%201.23%200%200%201%200%206.388C0%205.256.266%203.52%201.731%203.52a2.657%202.657%200%200%200%203.584%200c1.466%200%201.731%201.736%201.731%202.868a1.23%201.23%200%200%201-1.335%201.3zM3.523%203.844a1.922%201.922%200%201%201%201.922-1.922%201.922%201.922%200%200%201-1.922%201.922z%22%20fill%3D%22%2309c%22%2F%3E%3C%2Fsvg%3E) 5% 50%/5% no-repeat;
+  background: #fff url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%223.858%22%20height%3D%226.859%22%20viewBox%3D%220%200%203.858%206.859%22%3E%3Ctitle%3EAsset%206%3C%2Ftitle%3E%3Cpath%20d%3D%22M.127%203.128l3-3a.426.426%200%200%201%20.73.3v6a.426.426%200%200%201-.73.3l-3-3a.421.421%200%200%201%200-.6z%22%20fill%3D%22%2309c%22%2F%3E%3C%2Fsvg%3E) 5% 50%/5% no-repeat;
   width: 40rem;
   height: 2rem;
   border: 1px solid #eee; }
   .icon:hover {
-    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%227.047%22%20height%3D%227.688%22%20viewBox%3D%220%200%207.047%207.688%22%3E%3Ctitle%3Eicons%3C%2Ftitle%3E%3Cpath%20d%3D%22M5.711%207.688H1.336A1.23%201.23%200%200%201%200%206.388C0%205.256.266%203.52%201.731%203.52a2.657%202.657%200%200%200%203.584%200c1.466%200%201.731%201.736%201.731%202.868a1.23%201.23%200%200%201-1.335%201.3zM3.523%203.844a1.922%201.922%200%201%201%201.922-1.922%201.922%201.922%200%200%201-1.922%201.922z%22%20fill%3D%22%23069%22%2F%3E%3C%2Fsvg%3E); }
+    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%223.858%22%20height%3D%226.859%22%20viewBox%3D%220%200%203.858%206.859%22%3E%3Ctitle%3EAsset%206%3C%2Ftitle%3E%3Cpath%20d%3D%22M.127%203.128l3-3a.426.426%200%200%201%20.73.3v6a.426.426%200%200%201-.73.3l-3-3a.421.421%200%200%201%200-.6z%22%20fill%3D%22%23069%22%2F%3E%3C%2Fsvg%3E); }
   .icon h1 {
     margin: 0;
     padding: 0;
