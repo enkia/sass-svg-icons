@@ -10,12 +10,12 @@ body {
   margin: 5rem auto;
   padding: 2rem 2rem 3rem 8rem;
   line-height: normal;
-  background: #fff url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%223.858%22%20height%3D%226.859%22%20viewBox%3D%220%200%203.858%206.859%22%3E%3Ctitle%3EAsset%206%3C%2Ftitle%3E%3Cpath%20d%3D%22M.127%203.128l3-3a.426.426%200%200%201%20.73.3v6a.426.426%200%200%201-.73.3l-3-3a.421.421%200%200%201%200-.6z%22%20fill%3D%22%2309c%22%2F%3E%3C%2Fsvg%3E) 5% 50%/5% no-repeat;
+  background: #fff url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%224.909%22%20height%3D%227.648%22%20viewBox%3D%220%200%204.909%207.648%22%3E%3Ctitle%3Eicons%3C%2Ftitle%3E%3Cpath%20d%3D%22M.089%204.038a.3.3%200%200%201%200-.427L3.606.089a.306.306%200%200%201%20.432%200l.783.788a.3.3%200%200%201%200%20.427L2.3%203.824l2.521%202.52a.3.3%200%200%201%200%20.428l-.783.787a.305.305%200%200%201-.432%200z%22%20fill%3D%22%2309c%22%2F%3E%3C%2Fsvg%3E) 5% 50%/5% no-repeat;
   width: 40rem;
   height: 2rem;
   border: 1px solid #eee; }
   .icon:hover {
-    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%223.858%22%20height%3D%226.859%22%20viewBox%3D%220%200%203.858%206.859%22%3E%3Ctitle%3EAsset%206%3C%2Ftitle%3E%3Cpath%20d%3D%22M.127%203.128l3-3a.426.426%200%200%201%20.73.3v6a.426.426%200%200%201-.73.3l-3-3a.421.421%200%200%201%200-.6z%22%20fill%3D%22%23069%22%2F%3E%3C%2Fsvg%3E); }
+    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%224.909%22%20height%3D%227.648%22%20viewBox%3D%220%200%204.909%207.648%22%3E%3Ctitle%3Eicons%3C%2Ftitle%3E%3Cpath%20d%3D%22M.089%204.038a.3.3%200%200%201%200-.427L3.606.089a.306.306%200%200%201%20.432%200l.783.788a.3.3%200%200%201%200%20.427L2.3%203.824l2.521%202.52a.3.3%200%200%201%200%20.428l-.783.787a.305.305%200%200%201-.432%200z%22%20fill%3D%22%23069%22%2F%3E%3C%2Fsvg%3E); }
   .icon h1 {
     margin: 0;
     padding: 0;
