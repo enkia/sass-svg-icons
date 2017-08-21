@@ -1,6 +1,6 @@
 @import "../../dist/icons";
 
-$icon: iland;
+$icon: pencil-ruler3;
 
 body {
   font-size: 100%;
@@ -10,7 +10,7 @@ body {
   margin: 5rem auto;
   padding: 2rem 2rem 3rem 8rem;
   line-height: normal;
-  background: #fff get-icon($icon, #09c, #900, #ef6e26) 5% 50% / 5% no-repeat;
+  background: #fff get-icon($icon, #99c, #900, #ef6e26) 5% 50% / 5% no-repeat;
   width: 40rem;
   height: 2rem;
   border: 1px solid #eee;
