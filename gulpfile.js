@@ -60,7 +60,8 @@ gulp.task('build-svg', function() {
         path.basename = 'icon';
     }))
     .pipe(clipboard())
-    .pipe(gulp.dest(path.assets.dest));
+    .pipe(gulp.dest(path.assets.dest))
+    .pipe(browserSync.stream());
 });
 
 
